@@ -1,0 +1,72 @@
+/* Sidebar Layout */
+.sidebar-panel {
+  width: 32%;
+  min-width: 340px;
+  max-width: 450px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--bg-sidebar);
+  border-right: 1px solid var(--border-subtle);
+  position: relative;
+  z-index: 10;
+  transition: transform 0.25s ease-in-out;
+}
+
+/* Chat Area Layout */
+.chat-area-panel {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--bg-chat-area);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Background Wallpaper Pattern */
+.chat-wallpaper-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: var(--wallpaper-opacity);
+  pointer-events: none;
+  background-image: radial-gradient(#000 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+[data-theme='dark'] .chat-wallpaper-bg {
+  background-image: radial-gradient(#fff 1px, transparent 1px);
+}
+
+/* Mobile & Tablet Responsive Layout */
+@media (max-width: 768px) {
+  .sidebar-panel {
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+  }
+
+  .chat-area-panel {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 20;
+    transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  /* When no chat is selected on mobile, hide the chat-area panel */
+  .chat-area-panel.mobile-hidden {
+    display: none;
+  }
+
+  /* When a chat is selected on mobile, hide the sidebar */
+  .sidebar-panel.mobile-hidden {
+    display: none;
+  }
+}

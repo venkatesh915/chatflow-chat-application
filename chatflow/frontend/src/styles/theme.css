@@ -1,0 +1,104 @@
+:root {
+  /* Common Brand Colors */
+  --brand-primary: #00a884;
+  --brand-primary-hover: #02906f;
+  --brand-light: #25d366;
+  --brand-blue: #53bdeb;
+
+  /* Status Colors */
+  --status-online: #25d366;
+  --status-read-ticks: #53bdeb;
+  --status-unread-badge: #00a884;
+  --status-danger: #ea4335;
+  --status-warning: #fbbc05;
+
+  /* Typography */
+  --font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  --font-size-xs: 11px;
+  --font-size-sm: 12.5px;
+  --font-size-base: 14.2px;
+  --font-size-md: 16px;
+  --font-size-lg: 18px;
+  --font-size-xl: 22px;
+
+  /* Radius & Shadows */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+  --radius-full: 9999px;
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.08);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.15);
+  --shadow-lg: 0 12px 28px rgba(0, 0, 0, 0.25);
+}
+
+/* Light Theme */
+[data-theme='light'] {
+  --bg-app: #f0f2f5;
+  --bg-sidebar: #ffffff;
+  --bg-sidebar-header: #f0f2f5;
+  --bg-chat-header: #f0f2f5;
+  --bg-chat-area: #efeae2;
+  --bg-chat-composer: #f0f2f5;
+  --bg-input: #ffffff;
+  --bg-hover: #f5f6f6;
+  --bg-active: #e9edef;
+  --bg-modal: #ffffff;
+  --bg-card: #ffffff;
+  --bg-dropdown: #ffffff;
+
+  /* Message Bubbles */
+  --bubble-outgoing: #d9fdd3;
+  --bubble-incoming: #ffffff;
+  --bubble-outgoing-text: #111b21;
+  --bubble-incoming-text: #111b21;
+  --bubble-meta: #667781;
+  --bubble-system-bg: #ffffff;
+  --bubble-system-text: #54656f;
+
+  /* Text & Borders */
+  --text-primary: #111b21;
+  --text-secondary: #667781;
+  --text-muted: #8696a0;
+  --border-subtle: #e9edef;
+  --border-strong: #d1d7db;
+  --scrollbar-thumb: rgba(0, 0, 0, 0.2);
+
+  /* Doodle Wallpaper overlay opacity */
+  --wallpaper-opacity: 0.06;
+}
+
+/* Dark Theme (WhatsApp Web default dark) */
+[data-theme='dark'] {
+  --bg-app: #0c1317;
+  --bg-sidebar: #111b21;
+  --bg-sidebar-header: #202c33;
+  --bg-chat-header: #202c33;
+  --bg-chat-area: #0b141a;
+  --bg-chat-composer: #202c33;
+  --bg-input: #2a3942;
+  --bg-hover: #202c33;
+  --bg-active: #2a3942;
+  --bg-modal: #222e35;
+  --bg-card: #202c33;
+  --bg-dropdown: #233138;
+
+  /* Message Bubbles */
+  --bubble-outgoing: #005c4b;
+  --bubble-incoming: #202c33;
+  --bubble-outgoing-text: #e9edef;
+  --bubble-incoming-text: #e9edef;
+  --bubble-meta: #8696a0;
+  --bubble-system-bg: #182229;
+  --bubble-system-text: #8696a0;
+
+  /* Text & Borders */
+  --text-primary: #e9edef;
+  --text-secondary: #8696a0;
+  --text-muted: #667781;
+  --border-subtle: #222d34;
+  --border-strong: #2a3942;
+  --scrollbar-thumb: rgba(255, 255, 255, 0.16);
+
+  /* Doodle Wallpaper overlay opacity */
+  --wallpaper-opacity: 0.04;
+}

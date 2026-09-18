@@ -1,0 +1,87 @@
+# ==========================================
+# ChatFlow - Root .gitignore
+# ==========================================
+
+# Environment variables & secrets
+.env
+.env.*
+!.env.example
+*.local
+*.pem
+*.key
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+
+# Virtual environments
+venv/
+.venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# FastAPI / Python testing & linting
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Local database files
+*.db
+*.sqlite
+*.sqlite3
+chatflow.db
+
+# Local uploads & media storage
+uploads/
+**/uploads/
+media/
+**/media/
+
+# Node & Package Managers
+node_modules/
+**/node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# React / Vite build output
+dist/
+**/dist/
+build/
+**/build/
+.vite/
+**/.vite/
+
+# IDE & Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Operating System files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+
+# Logs
+*.log
+logs/
+
+# Temporary files
+*.tmp
+*.temp
+scratch/
+
+# Coverage & testing
+.coverage
+htmlcov/
+
+# Antigravity/local tool files
+.antigravity/
