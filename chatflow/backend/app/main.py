@@ -29,8 +29,9 @@ app = FastAPI(
     lifespan=lifespan
 )
 
-# CORS Configuration - supports comma-separated FRONTEND_URL and local dev
+# CORS Configuration - supports production Vercel domain, FRONTEND_URL env, and local dev
 cors_origins = [
+    "https://chatflow-chat-application.vercel.app",
     "http://localhost:5173",
     "http://127.0.0.1:5173",
     "http://localhost:3000",

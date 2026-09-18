@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: chatflow-backend
+    name: chatflow-chat-application
     runtime: python
     rootDir: chatflow/backend
     buildCommand: pip install -r requirements.txt
@@ -16,10 +16,10 @@ services:
       - key: ALGORITHM
         value: HS256
       - key: ACCESS_TOKEN_EXPIRE_MINUTES
-        value: "43200"
+        value: "60"
       - key: FRONTEND_URL
-        sync: false
+        value: https://chatflow-chat-application.vercel.app
       - key: UPLOAD_DIR
         value: uploads
       - key: MAX_UPLOAD_SIZE
-        value: "26214400"
+        value: "10485760"
