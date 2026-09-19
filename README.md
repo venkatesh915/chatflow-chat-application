@@ -78,16 +78,7 @@ copy .env.example .env     # On Windows
 # cp .env.example .env     # On macOS/Linux
 ```
 
-Configure `backend/.env`:
-```env
-DATABASE_URL=postgresql://postgres:postgres@localhost:5432/chatflow
-SECRET_KEY=chatflow_super_secret_jwt_key_development_2026_whatsapp_clone
-ALGORITHM=HS256
-ACCESS_TOKEN_EXPIRE_MINUTES=43200
-FRONTEND_URL=http://localhost:5173
-UPLOAD_DIR=uploads
-MAX_UPLOAD_SIZE=26214400
-```
+
 
 Start the FastAPI backend:
 ```bash
@@ -104,16 +95,6 @@ cd chatflow/frontend
 # Install dependencies
 npm install
 
-# Configure environment variables
-copy .env.example .env     # On Windows
-# cp .env.example .env     # On macOS/Linux
-```
-
-Configure `frontend/.env`:
-```env
-VITE_API_URL=http://localhost:8000
-VITE_WS_URL=ws://localhost:8000
-```
 
 Start Vite development server:
 ```bash
